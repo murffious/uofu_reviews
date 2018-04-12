@@ -14,7 +14,13 @@ Recommended = you'll build a professional portfolio site using HTML/CSS
 Layout Hint:  make a skeleton of the whole site using placeholder images and background colors to just show where each piece will go to get the spacing right. You can even draw it on a piece of paper , nav, header, main basically look at the OPTION EASY and just make something like that for the recommended one then style it later
 
 HTML 
-Be able to make a basic html document with all the necessary elements required to load in a browser from memory. i.e. doctype, html, body, head, meta 
+Be able to make a basic html document with all the necessary elements required to load in a browser from memory. i.e. doctype, html, body, head, meta etc.
+
+notes: 
+- doctype can be upper or lowercase it exists b/c other types of documents exist like xhtml or other types of docs so it just lets the browser know what type of document is coming through the pipeline in our case always html
+-in <html lang="en-us" > the lang attribute below makes online translator screen readers know what language to go for not required
+- <meta charset=“utf-8”> tells the browser to make sure to use proper characters when rendering the page - like not using Russian or Japanese symbol here - very first thing -in head some servers set it for you but don’t depend on it 
+ 
 Master these elements :
 p, div, h1, h2, h3, a, img, nav, header, section, footer, form, input, ul, li, label, textarea
 
