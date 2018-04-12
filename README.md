@@ -2,7 +2,7 @@
 
 HW 1 Review sheet - If you know all of the terms or concepts on this review sheet you will likely be able to ACE the HW
 
-How to Ace the HW ?  Master the content in the daily in class activities. 
+-- Master the content in the daily in class activities. 
 Activity 1-2 Terminal mastery - be able to be in the right folder for using git ! Use git and git hub to push repo up for submission and periodically pushing to git hub throughout for back upGit push pull commit add . 
 Activities 3-7 - Basic HTML and CSS - how to make and style an html document 
 Activities 8-11 CSS positions and making a layout: CSS positioning : relative, absolute fixed , z index, floats/clears 
