@@ -54,3 +54,6 @@ What is a named entity in html and what is the one for copyright (for footer) ?
 FINAL SUBMISSION CHECK -Did I test my links I submitted to make sure they take me to a screen the instructional staff needs to grade it ?  
 
 ***Disclaimer - you do NOT have to use everything on this sheet for getting an A. As you will see with programming there are many ways to achieve the same end BUT everything on here is likely to aid you in achieving the purpose of and completing the HW. 
+
+Try vocab list day 1 of the unit then review 
+Node Checkpoint.  client server Node(define and its purpose and how to run it)  asynchronous process.argv parseFloat parseInt require dot-notation fs(define purpose and common methods like readFile, write etc) .split(","); npm, request(package) JSON.parse package.json and anything else in the class activities
