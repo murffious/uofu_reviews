@@ -20,6 +20,7 @@
 
 `var database = firebase.database();` -- so the refrence variable database has all our methods built into it.
 `database.ref()` === use this before any of the following functionality and just "chain" on the next method with another `.` it just specifies where the data will be saved
+
 `.set({})` === Save values to the database or send/set data in firebase db, notice we send an object 
 `.on("value", function(){})` === effectively creates an "on-change" event so that the moment the page first loads or the moment the database changes, the impact is reflected immediately.
  database.ref().on("value", function(snapshot) {
@@ -30,3 +31,35 @@
 `.on("child_added")`
 database.ref().on("child_added", function(childSnapshot) {
   console.log(childSnapshot.val());
+database.ref().on("child_added", function(snapshot) {
+
+// 4. Create Firebase event for adding trains to the database and a row in the html when a user adds an entry
+trainData.ref().on("child_added", function(childSnapshot, prevChildKey) {
+  console.log(childSnapshot.val());
+  dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot) {
+  
+ #### Advanced for challenge HW
+ if you want to do the challenge version RPS homework database.ref("/chat");
+var playersRef = database.ref("players");
+var currentTurnRef = database.ref("turn");
+ 
+ playerRef.child("choice").set(clickChoice);
+ 
+ `firebase.database.ServerValue.TIMESTAMP,`
+ 
+ 
+ chatData.orderByChild("time").on("child_added", function(snapshot) {
+ 
+ 
+ currentPlayers = snapshot.numChildren();
+
+  // Check to see if players exist
+  playerOneExists = snapshot.child("1").exists();
+  playerTwoExists = snapshot.child("2").exists();
+
+  // Player data objects
+  playerOneData = snapshot.child("1").val();
+  currentTurnRef.onDisconnect().remove();
+
+    // Send disconnect message to chat with Firebase server generated timestamp and id of '0' to denote system message
+    chatDataDisc.onDisconnect().set({
