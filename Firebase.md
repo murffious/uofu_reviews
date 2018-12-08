@@ -16,10 +16,17 @@
 
     firebase.initializeApp(config);
 ``` 
-#### Commands to get us going  
+#### Commands to get us going - SO this code all goes right below the database initialization above
 
-  *Get a reference to the database service then use that reference to tap into or use the firebase built in methods to interact with the online db
-`var database = firebase.database(); -- so the refrence variable database has all our methods built into it`
-
+`var database = firebase.database();` -- so the refrence variable database has all our methods built into it.
+`database.ref()` === use this before any of the following functionality and just "chain" on the next method with another `.` it just specifies where the data will be saved
 `.set({})` === Save values to the database or send/set data in firebase db, notice we send an object 
-`.on("value")` === 
+`.on("value", function(){})` === effectively creates an "on-change" event so that the moment the page first loads or the moment the database changes, the impact is reflected immediately.
+ database.ref().on("value", function(snapshot) {
+
+      // Log everything that's coming out of snapshot
+      console.log(snapshot.val());
+`.push({})` 
+`.on("child_added")`
+database.ref().on("child_added", function(childSnapshot) {
+  console.log(childSnapshot.val());
