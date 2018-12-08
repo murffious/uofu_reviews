@@ -1,6 +1,6 @@
 #### How to setup and initialize a new Firebase
 `<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>` 
-* put this in the index.html and the code below in a javascript file (can put all in index.html file but not best practice for anything beyond tiny projects)
+* put the line above in the index.html file and the code below in a javascript file (can put all in index.html file but not best practice for anything beyond tiny projects) - make sure to link your javascript file
 
 
 ```
