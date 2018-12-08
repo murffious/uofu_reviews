@@ -1,6 +1,8 @@
-How to setup and initialize a new Firebase
-`<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>`
-```<script>
+## How to setup and initialize a new Firebase
+`<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>` * put this in the index.html and the code below in a javascript file (can put all in index.html file but not best practice for anything beyond tiny projects)
+
+
+`
     // Initialize Firebase
     // This is the code we copied and pasted from our app page
     var config = {
@@ -16,6 +18,9 @@ How to setup and initialize a new Firebase
     // ================================================================================
 
     // Get a reference to the database service
-    var database = firebase.database();```
-.set({})
+    var database = firebase.database();
+`
+    
+## Commands to get us going    
+.set({}) === Save values to the database or send/set data in firebase db *  notice we send an object 
 .on("value")
