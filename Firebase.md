@@ -16,7 +16,7 @@
 
     firebase.initializeApp(config);
 ``` 
-#### Commands to get us going - SO this code all goes right below the database initialization above
+#### Commands to SAVE/UPDATE and RETREIVE data - SO this code all goes right below the database initialization above
 
 `var database = firebase.database();` -- so the refrence variable database has all our methods built into it.
 `database.ref()` === use this before any of the following functionality and just "chain" on the next method with another `.` it just specifies where the data will be saved
